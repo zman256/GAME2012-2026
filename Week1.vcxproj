@@ -85,7 +85,6 @@
     <ClCompile Include="inc\imgui\imgui_impl_win32.cpp" />
     <ClCompile Include="inc\imgui\imgui_tables.cpp" />
     <ClCompile Include="inc\imgui\imgui_widgets.cpp" />
-    <ClCompile Include="Mesh.cpp" />
     <ClCompile Include="src\Buffer.cpp" />
     <ClCompile Include="src\glad.c" />
     <ClCompile Include="src\main.cpp" />
@@ -104,7 +103,6 @@
     <ClInclude Include="inc\imgui\imstb_rectpack.h" />
     <ClInclude Include="inc\imgui\imstb_textedit.h" />
     <ClInclude Include="inc\imgui\imstb_truetype.h" />
-    <ClInclude Include="Mesh.h" />
     <ClInclude Include="src\Buffer.h" />
     <ClInclude Include="src\raymath.h" />
     <ClInclude Include="src\Shader.h" />

@@ -57,9 +57,6 @@
     <ClCompile Include="src\Buffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Mesh.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Window.h">
@@ -105,9 +102,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\Downloads\par_shapes.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Mesh.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
