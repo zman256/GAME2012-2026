@@ -1,6 +1,7 @@
 #include "Window.h"
 #include "Shader.h"
 #include "Buffer.h"
+#include "Mesh.h"
 
 #include "raymath.h"
 #include <imgui/imgui.h>
