@@ -22,13 +22,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>$(DefaultPlatformToolset)</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>$(DefaultPlatformToolset)</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -85,6 +85,7 @@
     <ClCompile Include="inc\imgui\imgui_impl_win32.cpp" />
     <ClCompile Include="inc\imgui\imgui_tables.cpp" />
     <ClCompile Include="inc\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="Mesh.cpp" />
     <ClCompile Include="src\Buffer.cpp" />
     <ClCompile Include="src\glad.c" />
     <ClCompile Include="src\main.cpp" />
@@ -92,6 +93,7 @@
     <ClCompile Include="src\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Downloads\par_shapes.h" />
     <ClInclude Include="inc\imgui\imconfig.h" />
     <ClInclude Include="inc\imgui\imgui.h" />
     <ClInclude Include="inc\imgui\imgui_impl_glfw.h" />
@@ -102,6 +104,7 @@
     <ClInclude Include="inc\imgui\imstb_rectpack.h" />
     <ClInclude Include="inc\imgui\imstb_textedit.h" />
     <ClInclude Include="inc\imgui\imstb_truetype.h" />
+    <ClInclude Include="Mesh.h" />
     <ClInclude Include="src\Buffer.h" />
     <ClInclude Include="src\raymath.h" />
     <ClInclude Include="src\Shader.h" />
