@@ -449,9 +449,9 @@ int main()
 
 			world = s * r * t;
 			mvp = world * view * proj;
-			glUniformMatrix4fv(u_mvp, 1, GL_FALSE, MatrixToFloat(mvp));
 
 			glUseProgram(a1_tri_shader);
+			glUniformMatrix4fv(u_mvp, 1, GL_FALSE, MatrixToFloat(mvp));
 			glUniform3f(u_color, 0.8, 0.8f, 0.8f);
 			glBindVertexArray(vertex_array_rainbow);
 			glDrawArrays(GL_TRIANGLES, 0, 3);
@@ -548,7 +548,7 @@ int main()
 		{
 			glUseProgram(shaderNormals);
 
-			GLint u_mvp = glGetUniformLocation(shaderTcoords, "u_mvp");			
+			GLint u_mvp = glGetUniformLocation(shaderNormals, "u_mvp");
 			glUniformMatrix4fv(u_mvp, 1, GL_FALSE, MatrixToFloat(mvp));
 
 			DrawMesh(knotMesh);
@@ -559,7 +559,7 @@ int main()
 		{
 			glUseProgram(shaderNormals);
 
-			GLint u_mvp = glGetUniformLocation(shaderTcoords, "u_mvp");
+			GLint u_mvp = glGetUniformLocation(shaderNormals, "u_mvp");
 			glUniformMatrix4fv(u_mvp, 1, GL_FALSE, MatrixToFloat(mvp));
 
 			DrawMesh(rockMesh);
